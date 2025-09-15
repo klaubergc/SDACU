@@ -73,17 +73,17 @@
 						      </ul>
               </li>
 
-            </li>
-            <li class="nav-item dropdown mx-1">
-              <a class="nav-link dropdown-toggle text-white fw-semibold text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Workshop
-              </a>
-              <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="workshop-schedule.html">Current schedule</a></li>
-                <li><a class="dropdown-item" href="workshop-catalog.html">Workshop catalog</a></li>
+              
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle text-white fw-semibold text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Workshop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="workshop-schedule.html">Current schedule</a></li>
+                  <li><a class="dropdown-item" href="workshop-catalog.html">Workshop catalog</a></li>
                 </ul>
-            </li>  
-
+              </li>
+              
 
             <li class="nav-item dropdown mx-1">
               <a class="nav-link text-white fw-semibold text-center no-wrap" href="contract-services.html">
@@ -97,12 +97,13 @@
               Resources
             </a>
             <ul class="dropdown-menu">
-         <li><a class="dropdown-item" href="tutorial.html">Handouts and Tutorials</a></li>
+          <li><a class="dropdown-item" href="tutorial.html">Handouts and Tutorials</a></li>
               <li><a class="dropdown-item" href="find-the-sdacu.html">Find the SDACU</a></li>
               <li><a class="dropdown-item" href="">Software</a></li>
-                            <li><a class="dropdown-item" href="">Funding opportunities</a></li>
+              <li><a class="dropdown-item" href="">Funding opportunities</a></li>
               <li><a class="dropdown-item" href="feedback-survey.html">Feedback & Interest Survey</a></li>
-              <li><a class="dropdown-item" href="">Mailing List</a></li>       </ul>
+              <li><a class="dropdown-item" href="">Mailing List</a></li>
+              </ul>
          
    
             <li class="nav-item mx-1">
@@ -118,35 +119,92 @@
       </nav>
   <br>
   <br>
+      
     </header>
     <article>
 
+      <div class="container-fluid">
+        <div class="row">
+         
 
-
-      <article>
-        <div class="container py-4">
-          <h2 class="fw-bold mb-4 text-center">Drop-in Consulting at SDACU (UF/IFAS)</h2>
-      
-          <p style="max-width: 800px; margin: 0 auto; color: #555555;">
-            SDACU staff are available for brief drop-in consultations, typically lasting around 10 minutes, both via Zoom and in-person. 
-            Our current schedule is displayed in the calendar below. In-person sessions usually last one hour, while Zoom appointments are 
-            approximately 30 minutes. To join a Zoom session, click the consultant’s name; you will wait in the virtual waiting room and 
-            will be admitted in the order of arrival.
-          </p>
-      
-          <p style="max-width: 800px; margin: 1rem auto; color: #555555;">
-            Please note that we are unable to assist with coursework. We also ask that clients limit visits to our office hours to once per week 
-            to allow access for as many participants as possible.
-          </p>
-      
-          <!-- Google Calendar Embed -->
-          <div class="calendar-container mt-4 mb-5 text-center">
-            <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_PUBLIC_CALENDAR_ID&ctz=America/New_York" 
-            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-             </div>
+          <article>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm">
+          
+                  <h2 class="text-center fw-bold">Handouts, Tutorials &amp; Tools</h2>
+                  <p class="text-center mb-5" style="color:#555;">
+                    Learn statistical and computational methods with hands-on, open-source workflows in
+                    <strong>R</strong>, <strong>Python</strong>, <strong>Jupyter Notebooks</strong>, <strong>Google Colab</strong>, and <strong>Shiny</strong>.
+                    Our workshops support all IFAS disciplines—Agriculture, Natural Resources, Environmental Science, Food Science, and interdisciplinary projects—
+                    and include downloadable handouts, step-by-step tutorials, and interactive apps.
+                  </p>
+                  
+          
+                  <!-- LMM Tutorial -->
+                  <div style="border:1px solid #e5e7eb;border-left:6px solid #0ea5e9;border-radius:12px;padding:16px;margin-bottom:16px;background:#fafafa;">
+                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                      <span style="font-size:20px;">📘</span>
+                      <strong>Linear Mixed-Effects Models (LMM)</strong>
+                    </div>
+                    <p style="margin:0 0 8px 0;">
+                      Learn how to specify, fit, diagnose, and interpret LMMs. Choose the format that works for you:
+                    </p>
+                    <ul style="margin:0 0 8px 18px;">
+                      <li><strong>LMMs workshop in R:</strong> <a href="workshop_LMM2.html">Open workshop.html</a></li>
+                      <li><strong>Google Colab notebook:</strong> <a href="documents/LMM_workshop_colab.ipynb" download>Download <code>LMM_workshop_colab.ipynb</code></a></li>
+                      <li><strong>Jupyter notebook:</strong> <a href="documents/LMM_workshop_jupyter.ipynb" download>Download <code>LMM_workshop_jupyter.ipynb</code></a></li>
+                      <li><strong>Interactive Shiny app:</strong> <a href="https://carineklauberg.shinyapps.io/LMMs/" target="_blank" rel="noopener">Run the LMMs app</a></li>
+                    </ul>
+                    <p style="margin:0;color:#555;">
+                      Topics: fixed vs random effects, model formulae, contrasts, diagnostics (residuals, Q–Q, Shapiro/Levene), and reporting (tables, R²).
+                    </p>
+                  </div>
+          
+                  <!-- RCBD App -->
+                  <div style="border:1px solid #e5e7eb;border-left:6px solid #10b981;border-radius:12px;padding:16px;margin-bottom:16px;background:#fafafa;">
+                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                      <span style="font-size:20px;">🧪</span>
+                      <strong>Randomized Complete Block Design (RCBD)</strong>
+                    </div>
+                    <p style="margin:0 0 8px 0;">
+                      Plan and analyze RCBD experiments: define treatments and blocks, fit the model, and review assumptions and contrasts.
+                    </p>
+                    <ul style="margin:0 0 8px 18px;">
+                      <li><strong>Interactive Shiny app:</strong> <a href="https://carineklauberg.shinyapps.io/RCBD_Fertilization_Trial/" target="_blank" rel="noopener">Run the RCBD app</a></li>
+                    </ul>
+                    <p style="margin:0;color:#555;">
+                      Outputs include ANOVA tables, diagnostic plots, multiple comparisons, and effect visualizations.
+                    </p>
+                  </div>
+          
+                  <!-- Methods Finder -->
+                  <div style="border:1px solid #e5e7eb;border-left:6px solid #6366f1;border-radius:12px;padding:16px;margin-bottom:16px;background:#fafafa;">
+                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                      <span style="font-size:20px;">🧭</span>
+                      <strong>Statistical Methods Finder</strong>
+                    </div>
+                    <p style="margin:0 0 8px 0;">
+                      Not sure which analysis to use? Answer a few questions about your study design (response type, factors/blocks, repeated measures), and get suggested methods with example R code.
+                    </p>
+                    <ul style="margin:0 0 8px 18px;">
+                      <li><strong>Interactive Shiny app:</strong> <a href="https://carineklauberg.shinyapps.io/QuickStatSel/" aria-disabled="true">QuickStatSel</a></li>
+                    </ul>
+                    <p style="margin:0;color:#555;">
+                      Suggestions may include t/ANOVA/ANCOVA, GLMs/GLMMs, LMMs, nonparametrics, and post-hoc comparisons.
+                    </p>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          </div>
         </div>
-      </article>
       
+      
+
             
     </article>
         </div>
